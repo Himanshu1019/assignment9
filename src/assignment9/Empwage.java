@@ -1,5 +1,6 @@
 package assignment9;
 import java.util.Random;
+import java.util.Scanner;
 
  class Account {
 	
@@ -28,6 +29,16 @@ import java.util.Random;
 	int	total=wage*hour;
 	System.out.println("the daily wage of the employee is\n"  +total);
 	}
+	
+	public void partemp()
+	{
+		Scanner s = new Scanner(System.in);
+	      System.out.println("please enter part time wage");
+	    int wage  = s.nextInt();	
+		int hour=8;
+		int total=wage *hour;
+		 System.out.println(total);
+	}
 }	
  public class Empwage {
 		
@@ -37,7 +48,7 @@ import java.util.Random;
 		Account a=new Account();
 		a.calculate();
 		a.dailywage();
-			
+		a.partemp();
 			
 
 		}
