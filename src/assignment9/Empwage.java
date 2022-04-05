@@ -36,11 +36,14 @@ import java.util.Scanner;
 	{
 		Scanner s = new Scanner(System.in);
 	      System.out.println("please enter number of  working days in a month");
-	    int month  = s.nextInt();	
-	    System.out.println("please enter  wages per day");
 	    int days  = s.nextInt();	
+	   	
+	    System.out.println("please enter no of hours in a day");
+	    int hour  = s.nextInt();	
+	    
 		
-		int total=month*days;
+		int cal=hour*days;
+		int total=cal*50;
 		 System.out.println("the total wage for a given month is "+total);
 		 System.out.println("***************************************************");
 	}
