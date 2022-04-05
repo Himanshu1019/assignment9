@@ -13,13 +13,21 @@ import java.util.Random;
 		if(a==1)
 		{
 			System.out.println("yes the employee is present");
+			
 			}
 		else 
 		{
 			System.out.println("the employee is absent");
 		}
 
-}
+		}
+	public void dailywage()
+	{
+		int hour=8;
+		int wage=20;
+	int	total=wage*hour;
+	System.out.println("the daily wage of the employee is\n"  +total);
+	}
 }	
  public class Empwage {
 		
@@ -28,6 +36,7 @@ import java.util.Random;
 			
 		Account a=new Account();
 		a.calculate();
+		a.dailywage();
 			
 			
 
